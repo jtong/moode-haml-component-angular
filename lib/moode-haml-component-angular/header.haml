@@ -1,0 +1,12 @@
+%header
+  #{title}
+  - if defined?(left_icon) || defined?(left_label)
+    .header-left
+      %a(href="#" ng-tap="#{left_tap if defined?(left_tap)}" class="side-slide-trigger btn-style btn-4")
+        %i(class="#{left_icon if defined?(left_icon)}")
+        #{left_label if defined?(left_label)}
+  - if defined?(right_icon) || defined?(right_label)
+    .header-right
+      %a(href="#" ng-tap="#{right_tap if defined?(right_tap)}" class="btn-style btn-4")
+        %i(class="#{right_icon if defined?(right_icon)}")></i>
+        #{right_label if defined?(right_label)}
