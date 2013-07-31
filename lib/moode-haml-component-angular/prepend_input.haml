@@ -1,0 +1,4 @@
+.input-prepend
+  %span(class="add-on")
+    %i(class="#{icon if defined?(icon)}")
+  %input(class="#{"input-full" unless defined?(small)}" type="text" placeholder="#{placeholder if defined?(placeholder)}")

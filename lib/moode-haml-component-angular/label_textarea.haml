@@ -1,0 +1,5 @@
+%h5
+  %i(class="#{icon if defined?(icon)}")
+  #{label if defined?(label)}
+%textarea(name="#{name if defined?(name)}" id="#{id if defined?(id)}"
+          cols="#{defined?(cols)?cols:30}" rows="#{defined?(rows)?rows:3}" class="input-full")

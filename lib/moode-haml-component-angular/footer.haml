@@ -1,0 +1,8 @@
+%footer
+  %ul(class="footer-nav footer-nav-#{footer_tabs.length}tabs")
+    - footer_tabs.each do |tab|
+      %li(class="#{tab[:active] unless tab[:active].nil?}")
+        %a(ng-tap="#{tab[:tap] unless tab[:tap].nil?}" href="javascript:void(0);")
+          %i(class="#{tab[:icon] unless tab[:icon].nil?}")
+          %br/
+          #{tab[:label] unless tab[:label]}

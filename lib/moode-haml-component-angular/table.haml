@@ -1,0 +1,8 @@
+%table(class="table table-style")>
+  - items.each do|item|
+    %tr
+      %th
+        #{item[:label]}
+      %td
+        %i(class="icon-caret #{item[:icon] unless item[:icon].nil?}")
+        #{item[:text]}
