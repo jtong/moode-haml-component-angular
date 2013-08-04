@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = Moode::Haml::Component::Angular::VERSION
   spec.authors       = ["jtong"]
   spec.email         = ["tj19832@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{coral ui components}
+  spec.summary       = %q{coral ui components}
   spec.homepage      = ""
-  spec.license       = "MIT"
+  spec.license       = "GPL"
 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
