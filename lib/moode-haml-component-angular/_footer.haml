@@ -5,4 +5,4 @@
         %a(ng-tap="#{tab[:tap] unless tab[:tap].nil?}" href="javascript:void(0);")
           %i(class="#{tab[:icon] unless tab[:icon].nil?}")
           %br/
-          #{tab[:label] unless tab[:label]}
+          #{tab[:label] unless tab[:label].nil?}

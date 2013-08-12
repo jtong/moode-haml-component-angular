@@ -1,7 +1,9 @@
-%li(class="#{"active" if defined?(active)}")
-  %a(href="javascript:void(0);" class="")>
-    %span class="list-head">#{label}</span>
-    - badges.each do |badge|
-      %span(class="badge #{badge[:class] unless badge[:class].nil?}")
-        #{badge[:label] unless badge[:label].nil?}
+%li(ng-repeat="#{ng_repeat}" class="#{"active" if defined?(active)}")
+  %a(href="javascript:void(0);" class="" ng-tap="#{ng_tap if defined?(ng_tap)}")>
+    %h3
+      #{label}
+    - if defined?(badges)
+      - badges.each do |badge|
+        %span(class="badge #{badge[:class] unless badge[:class].nil?}")
+          #{badge[:label] unless badge[:label].nil?}
     %i(class="#{tail_icon if defined? tail_icon}")
